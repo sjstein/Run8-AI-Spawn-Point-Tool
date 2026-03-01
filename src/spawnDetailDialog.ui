@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SpawnDetailDialog</class>
+ <widget class="QDialog" name="SpawnDetailDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Spawn Point Details</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="spawnInfoGroup">
+     <property name="title">
+      <string>Spawn Point Information</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelName">
+        <property name="text">
+         <string>Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="name_edit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelType">
+        <property name="text">
+         <string>Type:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="type_combo"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelRoutePrefix">
+        <property name="text">
+         <string>Route Prefix:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="route_prefix_edit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelTrackID">
+        <property name="text">
+         <string>Track ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="track_id_edit"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="labelDirection">
+        <property name="text">
+         <string>Direction:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="direction_edit"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="labelTime">
+        <property name="text">
+         <string>Time (minutes):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="time_edit"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="labelSkip">
+        <property name="text">
+         <string>Skip AutoTrain:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QCheckBox" name="skip_check">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="labelUnk1">
+        <property name="text">
+         <string>Unk 1:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="unk1_edit"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="labelUnk2">
+        <property name="text">
+         <string>Unk 2:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLineEdit" name="unk2_edit"/>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="labelUnk3">
+        <property name="text">
+         <string>Unk 3:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLineEdit" name="unk3_edit"/>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="labelUnk4">
+        <property name="text">
+         <string>Position Offset:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLineEdit" name="unk4_edit"/>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="labelUnk5">
+        <property name="text">
+         <string>Unk 5:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLineEdit" name="unk5_edit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <spacer name="buttonSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="save_button">
+       <property name="text">
+        <string>Update</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancel_button">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
