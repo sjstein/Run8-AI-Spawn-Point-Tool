@@ -1,6 +1,6 @@
 @echo off
 echo ========================================
-echo Building Run8 Industry Tool Executable
+echo Building Run8 Spawn Editor Executable
 echo ========================================
 echo.
 
@@ -21,29 +21,24 @@ if errorlevel 1 (
     echo.
 )
 
-REM Update build date in version.py
-echo Updating build date...
-%PYTHON% update_version.py
-echo.
-
 REM Clean previous builds
 if exist build rmdir /s /q build
 if exist dist rmdir /s /q dist
 
 REM Build the executable using the .spec file (contains all configuration)
 echo Building executable...
-%PYTHON% -m PyInstaller Run8IndustryTool.spec
+%PYTHON% -m PyInstaller run8spawnEditor.spec
 
 echo.
-if exist "dist\Run8IndustryTool.exe" (
+if exist "dist\Run8SpawnEditor.exe" (
     echo ========================================
     echo Build successful!
     echo ========================================
     echo.
-    echo Executable location: dist\Run8IndustryTool.exe
+    echo Executable location: dist\Run8SpawnEditor.exe
     echo.
     echo You can distribute the entire 'dist' folder
-    echo or just the Run8IndustryTool.exe file.
+    echo or just the Run8SpawnEditor.exe file.
     echo.
 ) else (
     echo ========================================
